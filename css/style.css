@@ -1,0 +1,272 @@
+
+/*---- Estilos generales*/
+
+* {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+
+    color: beige
+    
+}
+
+
+h2 {
+
+    color: black ; 
+  
+}
+
+h3 {
+
+    color: rgb(70, 70, 70) ;  
+
+}
+
+h4 {
+
+    color: grey ;    
+
+}
+
+ul {
+    display: flex;
+    gap: 50px
+}
+
+li {
+
+    list-style: none;
+    text-align: left;
+
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+/*---Fondo body---*/
+
+body  {
+
+    background-color: beige;
+}
+
+/*---Fondo header-footer---*/
+
+header {
+    
+    background-color: black;
+    gap: 30vh;
+    text-align: center;
+    
+}
+
+ header .inicio , footer {
+
+    background-color: black;
+    border-top: 0.5px solid #383333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+ }
+
+ /*---Alineacion footer---*/
+
+ footer {
+
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #333;
+    border-top: 0.5px solid #333;
+    height: 18vh;
+    
+    
+ }
+
+/*---Tamaño imagenes---*/
+
+img {
+    width: 175px;
+}
+
+/*---Estilos class---*/
+
+.activo {
+
+    color: rgb(219, 106, 54);
+    text-shadow: rgb(223, 221, 217)
+    
+}
+
+.inicio {
+    
+    background-color: rgb(235, 215, 179);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.5px solid #333;
+    height: 6vh;
+
+ 
+}
+    
+/*---Secciones---*/
+
+.seccion1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    margin : 1vh 3vh;
+    border-bottom: 0.5px solid #333;
+    gap: 2vh;
+
+ }
+
+.seccion2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vh;
+    
+}
+
+.card1 {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.seccion3 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    border-bottom: 0.5px solid #333;
+    border-top: 0.5px solid #333;
+    margin-bottom: 5px;
+    gap: 5vh;
+    
+}
+
+.card1 , .card2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+
+}
+.seccion4 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.seccion5 {
+
+    background-color: rgb(219, 106, 54);
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+    border-top: 0.5px solid #383333;
+
+}
+
+/*-- detalles footer--*/ 
+
+.registro {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vh;
+    width: 110vh;
+
+}
+
+.contactos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 2vh;
+}
+.copyright {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 2vh;
+    border-top: 0.5px solid #383333;
+
+}
+
+
+/*---FRECUENTES---*/
+
+.frecuentes {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    margin: 2vh 2vh;
+
+}
+
+.formasdepago {
+
+    width: 70vh;
+}
+
+.devoluciones {
+
+    width: 70vh;
+}
+
+.giftcard {
+
+    width: 70vh;
+}
+
+/*---PRODUCTOS---*/
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
