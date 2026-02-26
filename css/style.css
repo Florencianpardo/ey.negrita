@@ -2,14 +2,16 @@
 /*---- Estilos generales*/
 
 * {
-   margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 h1, h2, h3 {
 
-    font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Montserrat', sans-serif;
+
 }
 
 h1 {
@@ -27,7 +29,7 @@ h2 {
 
 h3 {
 
-    color: rgb(70, 70, 70) ;  
+    color: rgb(32, 32, 32) ;  
 
 }
 
@@ -38,6 +40,7 @@ h4 {
 }
 
 ul {
+    
     display: flex;
     gap: 50px
 }
@@ -69,6 +72,7 @@ header {
     background-color: black;
     gap: 30vh;
     text-align: center;
+    height: 12vh;
     
 }
 
@@ -106,10 +110,21 @@ img {
 
 /*---Estilos class---*/
 
-.activo {
+.activo 
 
+{
     color: rgb(219, 106, 54);
-    text-shadow: rgb(223, 221, 217)
+    text-shadow: rgb(223, 167, 56);
+    
+}
+
+nav ul li a:hover {
+
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(223, 221, 217);
+    border-radius: 3px;
+    background-color: white;
+    padding: 6px
     
 }
 
@@ -124,7 +139,8 @@ img {
 
  
 }
-    
+
+
 /*---Secciones---*/
 
 .seccion1 {
@@ -134,7 +150,6 @@ img {
     align-items: center;
     justify-content: center;
     height: 15vh;
-    margin : 1vh 3vh;
     border-bottom: 0.5px solid #333;
     gap: 2vh;
 
@@ -145,39 +160,43 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 5vh;
-    
-}
-
-.card1 {
-
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 }
+
 
 .seccion3 {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center ;
-    border-bottom: 0.5px solid #333;
-    border-top: 0.5px solid #333;
-    margin-bottom: 5px;
-    gap: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px;
+    border-bottom:  0.5px solid #383333;rgb(219, 106, 54);
+    border-top: 0.5px solid #383333;rgb(219, 106, 54);
     
+}
+.seccion3 h2 {
+
+    grid-column: 1 / 3; 
+    text-align: center;
+
 }
 
 .card1 , .card2 {
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
 
+    border: 1px solid rgb(235, 215, 179);
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    
 }
+
+.seccion3 img {
+    max-width: 100%; 
+    height: auto;
+}
+
 .seccion4 {
 
     display: flex;
@@ -196,11 +215,18 @@ img {
     justify-content: space-evenly;
     align-items: center;
     height: 40vh;
-    border-top: 0.5px solid #383333;
+    border-top: 0.5px solid #383333;rgb(219, 106, 54);
 
 }
 
 /*-- detalles footer--*/ 
+
+legend  {
+    text-align: center;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin: 2vh 2vh;
+}
 
 .registro {
 
@@ -208,10 +234,24 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 1vh;
-    width: 110vh;
+    gap: 0.5vh;
+    width: 115vh;
 
 }
+
+.enviar {
+
+    padding: 3px;
+    border-radius: 2px;
+
+}
+
+.enviar:active {
+
+    background-color: black;
+    color: whitesmoke;
+}
+
 
 .contactos {
 
@@ -222,6 +262,7 @@ img {
     gap: 2vh;
     margin-top: 2vh;
 }
+
 .copyright {
 
     display: flex;
@@ -240,26 +281,63 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 3vh;
-    margin: 2vh 2vh;
-
+    gap: 2vh;
+    margin: 5vh;
+    
 }
 
 .formasdepago {
 
     width: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 3vh;
 }
 
+.formasdepago::after{
+
+    content: "💵 💳 📱 ";
+    font-size: 2rem;
+
+}
 .devoluciones {
 
-    width: 70vh;
+   width: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 3vh;
+}
+
+.devoluciones::after {
+
+    content: "📦  📤  📮";
+     font-size: 2rem;
+
 }
 
 .giftcard {
 
-    width: 70vh;
+   width: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 3vh;
+
 }
+
+.giftcard::after {
+
+      content: "🎁 🧧 🎂 ";
+     font-size: 2rem;
+
+}
+
+
 
 /*---PRODUCTOS---*/
 
@@ -270,3 +348,8 @@ img {
     justify-content: space-evenly;
 }
 
+::selection {
+
+    background-color: rgb(219, 106, 54);
+    color: beige;
+}
