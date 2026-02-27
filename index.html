@@ -31,52 +31,78 @@
 
     <main>
 
-        <section class="seccion1"> 
+        <section class="seccion1" style="background-image:url('./img/portada.jpeg')">
 
             <h2>¡Bienvenidos a nuestra tienda online!</h2>
             <p>Tenemos gafas en tendencia & clásicas, con estilo & actitud para vos.</p>
 
         </section>
 
-        <section class="seccion2">
-                <div>
-                    <h2>LAS MAS VENDIDAS</h2>
-                    <h3>Gafas Cadiz Anaranjada </h3>
-                    <img src="./img/cadizanaranjado.jpg" alt="Cadiz Anaranjado en promo">
-                    <p>¡Te podes llevar este modelo en tendencia precio promocional!</p>
-                    <h4>$20,000</h4>
+        <div id="carouselExample" class="carousel slide">
+
+              <section class="seccion2">
+
+                    <h2>LAS MAS VENDIDAS</h2> 
+                    <p>¡Aprovecha y no te quedes sin tus gafas virales!</p>
+                    <h3>Modelo Cartagena</h3>
+
+             </section>
+
+            <div class="carousel-inner">
+            
+                <div class="carousel-item active">
+                    <img src="./img/masvendida2.jpeg" class="d-block w-100" alt="cartagena2">
                 </div>
-        </section>
 
-        <section class="seccion3">
+        <div class="carousel-item">
+            <img src="./img/masvendida1.jpeg" class="d-block w-100" alt="cartagena1">
+        </div>
 
-            <h2>¡GAFAS EN 2x1!</h2>
+  </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
 
-            <div class="card1">
-                <h3>Modelo Space </h3>
-                <img src="./img/spacetodos.webp" alt="Space en promo">
-                <p>Te llegan dos modelos diferentes de los mostrados en imagen por el valor de uno</p>
-                <h4>$30,000</h4>
-            </div>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
 
-            <div class="card2">
-                <h3>Modelo Rio </h3>
-                <img src="./img/riotodos.webp" alt="Rio en promo">
-                <p> Te llegan dos modelos diferentes de los mostrados en la imagen por el valor de uno.</p>
-                <h4>$30,000</h4>
-            </div>
+        </div>
 
-        </section>
+
 
         <section class= "seccion4">
-            <h2>MODELOS EN TENDENCIA 2026</h2>
+            <h2>MODELO TENDENCIA 2026</h2>
+            <figcaption>Nuestro modelo de la nueva temporada ya disponible.</figcaption>
 
-            <figure>
-                <figcaption>Nuestros modelos de la nueva temporada ya disponibles</figcaption>
-                <img src="./img/arizonanegro.jpg" alt="Arizonanegro">
-                <img src="./img/arizonaazulmarron.jpg" alt="arizonaazulmarron">
-                <img src="./img/arizonaprintverde.jpg" alt="arizonaprintverde">
-            </figure>
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/tendencia1.jpeg" class="d-block w-100" alt="tendencia1">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/tendencia2.jpeg" class="d-block w-100" alt="tendencia2">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/tendencia3.jpeg" class="d-block w-100" alt="tendencia3">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/tendencia4.jpeg" class="d-block w-100" alt="tendencia4">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div> 
         </section>
 
         <section class="seccion5">

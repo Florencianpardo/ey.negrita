@@ -40,7 +40,7 @@ h4 {
 }
 
 ul {
-    
+
     display: flex;
     gap: 50px
 }
@@ -72,7 +72,7 @@ header {
     background-color: black;
     gap: 30vh;
     text-align: center;
-    height: 12vh;
+    height: 15vh;
     
 }
 
@@ -95,18 +95,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-bottom: 0.5px solid #333;
-    border-top: 0.5px solid #333;
-    height: 18vh;
-    
     
  }
 
-/*---Tamaño imagenes---*/
-
-img {
-    width: 175px;
-}
 
 /*---Estilos class---*/
 
@@ -135,7 +126,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     border-bottom: 0.5px solid #333;
-    height: 6vh;
+    height: 8vh;
 
  
 }
@@ -148,11 +139,12 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 15vh;
+    justify-content: flex-start;
     border-bottom: 0.5px solid #333;
-    gap: 2vh;
-
+    height: 400px;
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed; 
  }
 
 .seccion2 {
@@ -161,6 +153,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 3vh 3vh;
 
 }
 
@@ -186,15 +179,9 @@ nav ul li a:hover {
 
 
     border: 1px solid rgb(235, 215, 179);
-    padding: 15px;
     text-align: center;
     justify-content: center;
     
-}
-
-.seccion3 img {
-    max-width: 100%; 
-    height: auto;
 }
 
 .seccion4 {
@@ -203,7 +190,8 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
+    margin: 3vh 3vh;
+
 }
 
 .seccion5 {
@@ -212,20 +200,17 @@ nav ul li a:hover {
     color: beige;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    height: 40vh;
     border-top: 0.5px solid #383333;rgb(219, 106, 54);
-
+    
 }
 
 /*-- detalles footer--*/ 
 
 legend  {
+
     text-align: center;
-    padding-left: 1vh;
-    padding-right: 1vh;
-    margin: 2vh 2vh;
+
 }
 
 .registro {
@@ -235,14 +220,14 @@ legend  {
     align-items: center;
     justify-content: space-between;
     gap: 0.5vh;
-    width: 115vh;
-
+    margin-bottom: 2vh;
 }
 
 .enviar {
 
     padding: 3px;
-    border-radius: 2px;
+    border-radius: 5px;
+    margin-top: 0.5vh;
 
 }
 
@@ -259,8 +244,13 @@ legend  {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vh;
-    margin-top: 2vh;
+    margin: 3vh 3vh;
+    border-bottom: 0.5px solid #383333;
+}
+
+.contactosbody  {
+
+    background-color: black;
 }
 
 .copyright {
@@ -268,8 +258,7 @@ legend  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2vh 2vh;
-    border-top: 0.5px solid #383333;
+ 
 
 }
 
@@ -280,31 +269,31 @@ legend  {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2vh;
     margin: 5vh;
+
     
 }
 
 .formasdepago {
 
-    width: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2vh;
     margin-top: 3vh;
+
 }
 
 .formasdepago::after{
 
     content: "💵 💳 📱 ";
     font-size: 2rem;
-
 }
 .devoluciones {
 
-   width: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,12 +310,12 @@ legend  {
 
 .giftcard {
 
-   width: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2vh;
     margin-top: 3vh;
+    margin-bottom: 3vh;
 
 }
 
@@ -342,10 +331,24 @@ legend  {
 /*---PRODUCTOS---*/
 
 .productos {
+
     display: flex;
     flex-direction: column;
+   
+}
+
+.portadaproductos {
+
+   display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    border-bottom: 0.5px solid #333;
+    height: 600px;
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed; 
+
 }
 
 ::selection {
